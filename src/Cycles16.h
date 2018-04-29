@@ -1,8 +1,10 @@
 #ifndef Cycles16_h
 #define Cycles16_h
 
-#if !defined(__AVR_ATmega328P__)
-  #warning "This library has only been tested with the AVR ATmega328P."
+#include "Arduino.h"
+
+#ifndef __AVR__
+#warning "This library has not been tested with your board."
 #endif
 
 #include "Arduino.h"

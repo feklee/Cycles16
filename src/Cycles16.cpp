@@ -1,5 +1,4 @@
 #include "Cycles16.h"
-#include <util/atomic.h>
 
 static volatile uint8_t timer2OverflowCount = 0;
 
