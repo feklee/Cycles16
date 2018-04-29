@@ -12,7 +12,7 @@ uint16_t Cycles16::now() {
 uint16_t Cycles16::elapsed(uint16_t cyclesAtStart, uint16_t cyclesAtEnd) {
   static const uint16_t maxCycles = 0xffff;
   if (cyclesAtEnd < cyclesAtStart) {
-    return cyclesAtEnd + (0xffff - cyclesAtStart);
+    return cyclesAtEnd + (maxCycles - cyclesAtStart);
   }
   return cyclesAtEnd - cyclesAtStart;
 }
